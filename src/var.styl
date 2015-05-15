@@ -1,0 +1,72 @@
+radius(n)
+    -webkit-border-radius unit(n, px)
+    -moz-border-radius unit(n, px)
+    border-radius unit(n, px)
+    overflow hidden
+    
+radius2(tl=0, tr=0, br=0, bl=0)
+    -webkit-border-radius unit(tl, px) unit(tr, px) unit(br, px) unit(bl, px)
+    -moz-border-radius unit(tl, px) unit(tr, px) unit(br, px) unit(bl, px)
+    border-radius unit(tl, px) unit(tr, px) unit(br, px) unit(bl, px)
+    overflow hidden
+
+border-box()
+    -webkit-box-sizing border-box
+    -moz-box-sizing border-box
+    box-sizing border-box
+
+shadow(x, y, b, s, a)
+    -webkit-box-shadow unit(x) unit(y) unit(b) unit(s) rgba(0,0,0,a)
+            box-shadow unit(x) unit(y) unit(b) unit(s) rgba(0,0,0,a)
+
+omit(n)
+    overflow  hidden
+    text-overflow ellipsis
+    if n > 1
+        display -webkit-box
+        -webkit-line-clamp n
+        -webkit-box-orient vertical
+    else
+        word-break keep-all
+        white-space nowrap
+
+padding(n) 
+    padding unit(n, px)
+        
+padding-top(n) 
+    padding-top unit(n, px)
+    
+padding-right(n) 
+    padding-right unit(n, px)
+    
+padding-bottom(n) 
+    padding-bottom unit(n, px)
+
+padding-left(n) 
+    padding-left unit(n, px)
+    
+margin(n) 
+    margin unit(n, px)
+        
+margin-top(n) 
+    margin-top unit(n, px)
+
+margin-right(n) 
+    margin-right unit(n, px)
+    
+margin-bottom(n) 
+    margin-bottom unit(n, px)
+    
+margin-left(n) 
+    margin-left unit(n, px)
+    
+font-size(n) 
+    font-size unit(n, px)
+    
+width(n) 
+    width unit(n, px)
+
+height(n) 
+    height unit(n, px)
+
+
