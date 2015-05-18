@@ -1,13 +1,16 @@
+u(n) 
+    n == 0 ? n : unit(n, px);
+
 radius(n)
-    -webkit-border-radius unit(n, px)
-    -moz-border-radius unit(n, px)
-    border-radius unit(n, px)
+    -webkit-border-radius u(n)
+    -moz-border-radius u(n)
+    border-radius u(n)
     overflow hidden
     
 radius2(tl=0, tr=0, br=0, bl=0)
-    -webkit-border-radius unit(tl, px) unit(tr, px) unit(br, px) unit(bl, px)
-    -moz-border-radius unit(tl, px) unit(tr, px) unit(br, px) unit(bl, px)
-    border-radius unit(tl, px) unit(tr, px) unit(br, px) unit(bl, px)
+    -webkit-border-radius u(tl, px) u(tr, px) u(br, px) u(bl, px)
+    -moz-border-radius u(tl, px) u(tr, px) u(br, px) u(bl, px)
+    border-radius u(tl, px) u(tr, px) u(br, px) u(bl, px)
     overflow hidden
 
 border-box()
@@ -16,8 +19,8 @@ border-box()
     box-sizing border-box
 
 shadow(x, y, b, s, a)
-    -webkit-box-shadow unit(x) unit(y) unit(b) unit(s) rgba(0,0,0,a)
-            box-shadow unit(x) unit(y) unit(b) unit(s) rgba(0,0,0,a)
+    -webkit-box-shadow u(x) u(y) u(b) u(s) rgba(0,0,0,a)
+            box-shadow u(x) u(y) u(b) u(s) rgba(0,0,0,a)
 
 omit(n)
     overflow  hidden
@@ -31,42 +34,42 @@ omit(n)
         white-space nowrap
 
 padding(n) 
-    padding unit(n, px)
+    padding u(n)
         
 padding-top(n) 
-    padding-top unit(n, px)
+    padding-top u(n)
     
 padding-right(n) 
-    padding-right unit(n, px)
+    padding-right u(n)
     
 padding-bottom(n) 
-    padding-bottom unit(n, px)
+    padding-bottom u(n)
 
 padding-left(n) 
-    padding-left unit(n, px)
+    padding-left u(n)
     
 margin(n) 
-    margin unit(n, px)
+    margin u(n)
         
 margin-top(n) 
-    margin-top unit(n, px)
+    margin-top u(n)
 
 margin-right(n) 
-    margin-right unit(n, px)
+    margin-right u(n)
     
 margin-bottom(n) 
-    margin-bottom unit(n, px)
+    margin-bottom u(n)
     
 margin-left(n) 
-    margin-left unit(n, px)
+    margin-left u(n)
     
 font-size(n) 
-    font-size unit(n, px)
+    font-size u(n)
     
 width(n) 
-    width unit(n, px)
+    width u(n)
 
 height(n) 
-    height unit(n, px)
+    height u(n)
 
 
