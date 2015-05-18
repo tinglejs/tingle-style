@@ -4,6 +4,9 @@ var gulp = require('gulp');
 // https://www.npmjs.com/package/gulp-rename/
 var rename = require('gulp-rename');
 
+// https://www.npmjs.com/package/gulp-just-replace/
+var replace = require('gulp-just-replace');
+
 // https://github.com/gulpjs/gulp/blob/master/docs/recipes/server-with-livereload-and-css-injection.md
 var browserSync = require('browser-sync');
 
@@ -71,6 +74,11 @@ gulp.task('publish', ['stylus'], function () {
     gulp.src(["src/tingle.css"])
         .pipe(cssimport({}))
         .pipe(concat('tingle.css'))
+        // 删除souceMapping一行
+        .pipe(replace([{
+            search: /\/\*#\ssourceMappingURL=[^*]*\*\//g,
+            replacement: ''
+        }]))
         .pipe(gulp.dest("dist/"))
         .pipe(cssmin())
         .pipe(rename(function (path) {
