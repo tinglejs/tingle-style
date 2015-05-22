@@ -1,4 +1,4 @@
-.tCL after {
+.tCL:after {
   content: ".";
   display: block;
   height: 0;
@@ -296,6 +296,21 @@
 .tPL20 {
   padding-left: 20px;
 }
+.tP30 {
+  padding: 30px;
+}
+.tPT30 {
+  padding-top: 30px;
+}
+.tPR30 {
+  padding-right: 30px;
+}
+.tPB30 {
+  padding-bottom: 30px;
+}
+.tPL30 {
+  padding-left: 30px;
+}
 .tM0 {
   margin: 0;
 }
@@ -460,6 +475,21 @@
 }
 .tML20 {
   margin-left: 20px;
+}
+.tM30 {
+  margin: 30px;
+}
+.tMT30 {
+  margin-top: 30px;
+}
+.tMR30 {
+  margin-right: 30px;
+}
+.tMB30 {
+  margin-bottom: 30px;
+}
+.tML30 {
+  margin-left: 30px;
 }
 .tPR {
   position: relative;
