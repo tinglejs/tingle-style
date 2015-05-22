@@ -1,21 +1,42 @@
 u(n) 
     n == 0 ? n : unit(n, px);
 
+// http://border-radius.com/
 radius(n)
     -webkit-border-radius u(n)
-    -moz-border-radius u(n)
     border-radius u(n)
     overflow hidden
     
-radius2(tl=0, tr=0, br=0, bl=0)
-    -webkit-border-radius u(tl, px) u(tr, px) u(br, px) u(bl, px)
-    -moz-border-radius u(tl, px) u(tr, px) u(br, px) u(bl, px)
-    border-radius u(tl, px) u(tr, px) u(br, px) u(bl, px)
+radiusL(n)
+    -webkit-border-top-left-radius u(n)
+    -webkit-border-bottom-left-radius u(n)
+    border-top-left-radius u(n)
+    border-bottom-left-radius u(n)
+    overflow hidden
+    
+radiusT(n)
+    -webkit-border-top-left-radius u(n)
+    -webkit-border-top-right-radius u(n)
+    border-top-left-radius u(n)
+    border-top-right-radius u(n)
+    overflow hidden
+    
+radiusR(n)
+    -webkit-border-top-right-radius u(n)
+    -webkit-border-bottom-right-radius u(n)
+    border-top-right-radius u(n)
+    border-bottom-right-radius u(n)
+    overflow hidden
+
+radiusB(n)
+    -webkit-border-bottom-right-radius u(n)
+    -webkit-border-bottom-left-radius u(n)
+    border-bottom-right-radius u(n)
+    border-bottom-left-radius u(n)
     overflow hidden
 
 border-box()
     -webkit-box-sizing border-box
-    -moz-box-sizing border-box
     box-sizing border-box
 
 shadow(x, y, b, s, a)
