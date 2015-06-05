@@ -28,28 +28,28 @@ for n in 3 4 5 6
 // padding
 for n in 0 2 4 6 8 10 12 14 16 18 20 30
     .tP{n}
-        padding n
+        paddingAll n
     .tPT{n}
-        padding-top n
+        paddingTop n
     .tPR{n}
-        padding-right n
+        paddingRight n
     .tPB{n}
-        padding-bottom n
+        paddingBottom n
     .tPL{n}
-        padding-left n
+        paddingLeft n
 
 // margin 
 for n in 0 2 4 6 8 10 12 14 16 18 20 30
     .tM{n}
-        margin n
+        marginAll n
     .tMT{n}
-        margin-top n
+        marginTop n
     .tMR{n}
-        margin-right n
+        marginRight n
     .tMB{n}
-        margin-bottom n
+        marginBottom n
     .tML{n}
-        margin-left n
+        marginLeft n
 
 // position
 .tPR
@@ -79,48 +79,56 @@ for n in 0 2 4 6 8 10 12 14 16 18 20 30
     
 // font line height
 line-heights = {
-    tLH1: 1,
-    tLH1_3: 1.3,
-    tLH1_5: 1.5,
-    tLH1_8: 1.8,
-    tLH2:   2,
-    tLH30:  30px,
-    tLH44:  44px
+    '1': 1,
+    '1_3': 1.3,
+    '1_5': 1.5,
+    '1_8': 1.8,
+    '2':   2,
+    '30':  30px,
+    '44':  44px
 }
 for key, value in line-heights
-    .{key}
+    .tLH{key}
         line-height value
 
 for n in 30 44
     .tW{n}
-        width n
+        w n
     .tH{n}
-        height n
+        h n
         
+/*前缀tF的字号将在未来的版本中将删除，文字字号请使用tFS前缀*/
 // font size
+.tFS0
+    fontSize 0
 for n in 12 14 16 18 20 22 24 26 28 30
     .tF{n}
-        font-size n
+        fontSize n
+    .tFS{n}
+        fontSize n
 
+/*前缀tF的文字颜色将在未来的版本中将删除，文字颜色请使用tFC前缀*/
 // font color
 font-colors = {
-    tF0: #000,
-    tF3: #333,
-    tF4: #444,
-    tF5: #555,
-    tF6: #666,
-    tF7: #777,
-    tF8: #888,
-    tF9: #999,
-    tFa: #aaa,
-    tFb: #bbb,
-    tFc: #ccc,
-    tFd: #ddd,
-    tFe: #eee,
-    tFf: #fff
+    '0': #000,
+    '3': #333,
+    '4': #444,
+    '5': #555,
+    '6': #666,
+    '7': #777,
+    '8': #888,
+    '9': #999,
+    'a': #aaa,
+    'b': #bbb,
+    'c': #ccc,
+    'd': #ddd,
+    'e': #eee,
+    'f': #fff
 }
 for key, value in font-colors
-    .{key}
+    .tF{key}
+        color value
+    .tFC{key}
         color value
         
 // font align
@@ -133,23 +141,23 @@ for key, value in font-colors
         
 // background color
 background-colors = {
-    tBC0: #000,
-    tBC3: #333,
-    tBC4: #444,
-    tBC5: #555,
-    tBC6: #666,
-    tBC7: #777,
-    tBC8: #888,
-    tBC9: #999,
-    tBCa: #aaa,
-    tBCb: #bbb,
-    tBCc: #ccc,
-    tBCd: #ddd,
-    tBCe: #eee,
-    tBCf: #fff
+    '0': #000,
+    '3': #333,
+    '4': #444,
+    '5': #555,
+    '6': #666,
+    '7': #777,
+    '8': #888,
+    '9': #999,
+    'a': #aaa,
+    'b': #bbb,
+    'c': #ccc,
+    'd': #ddd,
+    'e': #eee,
+    'f': #fff
 }
 for key, value in background-colors
-    .{key}
+    .tBC{key}
         background-color value
 
 // opacity

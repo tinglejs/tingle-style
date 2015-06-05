@@ -548,15 +548,6 @@
 .tLH1 {
   line-height: 1;
 }
-.tLH1_3 {
-  line-height: 1.3;
-}
-.tLH1_5 {
-  line-height: 1.5;
-}
-.tLH1_8 {
-  line-height: 1.8;
-}
 .tLH2 {
   line-height: 2;
 }
@@ -565,6 +556,15 @@
 }
 .tLH44 {
   line-height: 44px;
+}
+.tLH1_3 {
+  line-height: 1.3;
+}
+.tLH1_5 {
+  line-height: 1.5;
+}
+.tLH1_8 {
+  line-height: 1.8;
 }
 .tW30 {
   width: 30px;
@@ -578,76 +578,153 @@
 .tH44 {
   height: 44px;
 }
+/*前缀tF的字号将在未来的版本中将删除，文字字号请使用tFS前缀*/
+.tFS0 {
+  font-size: 0;
+}
 .tF12 {
+  font-size: 12px;
+}
+.tFS12 {
   font-size: 12px;
 }
 .tF14 {
   font-size: 14px;
 }
+.tFS14 {
+  font-size: 14px;
+}
 .tF16 {
+  font-size: 16px;
+}
+.tFS16 {
   font-size: 16px;
 }
 .tF18 {
   font-size: 18px;
 }
+.tFS18 {
+  font-size: 18px;
+}
 .tF20 {
+  font-size: 20px;
+}
+.tFS20 {
   font-size: 20px;
 }
 .tF22 {
   font-size: 22px;
 }
+.tFS22 {
+  font-size: 22px;
+}
 .tF24 {
+  font-size: 24px;
+}
+.tFS24 {
   font-size: 24px;
 }
 .tF26 {
   font-size: 26px;
 }
+.tFS26 {
+  font-size: 26px;
+}
 .tF28 {
+  font-size: 28px;
+}
+.tFS28 {
   font-size: 28px;
 }
 .tF30 {
   font-size: 30px;
 }
+.tFS30 {
+  font-size: 30px;
+}
+/*前缀tF的文字颜色将在未来的版本中将删除，文字颜色请使用tFC前缀*/
 .tF0 {
+  color: #000;
+}
+.tFC0 {
   color: #000;
 }
 .tF3 {
   color: #333;
 }
+.tFC3 {
+  color: #333;
+}
 .tF4 {
+  color: #444;
+}
+.tFC4 {
   color: #444;
 }
 .tF5 {
   color: #555;
 }
+.tFC5 {
+  color: #555;
+}
 .tF6 {
+  color: #666;
+}
+.tFC6 {
   color: #666;
 }
 .tF7 {
   color: #777;
 }
+.tFC7 {
+  color: #777;
+}
 .tF8 {
+  color: #888;
+}
+.tFC8 {
   color: #888;
 }
 .tF9 {
   color: #999;
 }
+.tFC9 {
+  color: #999;
+}
 .tFa {
+  color: #aaa;
+}
+.tFCa {
   color: #aaa;
 }
 .tFb {
   color: #bbb;
 }
+.tFCb {
+  color: #bbb;
+}
 .tFc {
+  color: #ccc;
+}
+.tFCc {
   color: #ccc;
 }
 .tFd {
   color: #ddd;
 }
+.tFCd {
+  color: #ddd;
+}
 .tFe {
   color: #eee;
 }
+.tFCe {
+  color: #eee;
+}
 .tFf {
+  color: #fff;
+}
+.tFCf {
   color: #fff;
 }
 .tFAL {
