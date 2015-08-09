@@ -1,4 +1,5 @@
-.tCL:after {
+.tCL:after,
+.tClear:after {
   content: ".";
   display: block;
   height: 0;
@@ -308,6 +309,66 @@
 .tPL20 {
   padding-left: 20px;
 }
+.tP22 {
+  padding: 22px;
+}
+.tPT22 {
+  padding-top: 22px;
+}
+.tPR22 {
+  padding-right: 22px;
+}
+.tPB22 {
+  padding-bottom: 22px;
+}
+.tPL22 {
+  padding-left: 22px;
+}
+.tP24 {
+  padding: 24px;
+}
+.tPT24 {
+  padding-top: 24px;
+}
+.tPR24 {
+  padding-right: 24px;
+}
+.tPB24 {
+  padding-bottom: 24px;
+}
+.tPL24 {
+  padding-left: 24px;
+}
+.tP26 {
+  padding: 26px;
+}
+.tPT26 {
+  padding-top: 26px;
+}
+.tPR26 {
+  padding-right: 26px;
+}
+.tPB26 {
+  padding-bottom: 26px;
+}
+.tPL26 {
+  padding-left: 26px;
+}
+.tP28 {
+  padding: 28px;
+}
+.tPT28 {
+  padding-top: 28px;
+}
+.tPR28 {
+  padding-right: 28px;
+}
+.tPB28 {
+  padding-bottom: 28px;
+}
+.tPL28 {
+  padding-left: 28px;
+}
 .tP30 {
   padding: 30px;
 }
@@ -488,6 +549,66 @@
 .tML20 {
   margin-left: 20px;
 }
+.tM22 {
+  margin: 22px;
+}
+.tMT22 {
+  margin-top: 22px;
+}
+.tMR22 {
+  margin-right: 22px;
+}
+.tMB22 {
+  margin-bottom: 22px;
+}
+.tML22 {
+  margin-left: 22px;
+}
+.tM24 {
+  margin: 24px;
+}
+.tMT24 {
+  margin-top: 24px;
+}
+.tMR24 {
+  margin-right: 24px;
+}
+.tMB24 {
+  margin-bottom: 24px;
+}
+.tML24 {
+  margin-left: 24px;
+}
+.tM26 {
+  margin: 26px;
+}
+.tMT26 {
+  margin-top: 26px;
+}
+.tMR26 {
+  margin-right: 26px;
+}
+.tMB26 {
+  margin-bottom: 26px;
+}
+.tML26 {
+  margin-left: 26px;
+}
+.tM28 {
+  margin: 28px;
+}
+.tMT28 {
+  margin-top: 28px;
+}
+.tMR28 {
+  margin-right: 28px;
+}
+.tMB28 {
+  margin-bottom: 28px;
+}
+.tML28 {
+  margin-left: 28px;
+}
 .tM30 {
   margin: 30px;
 }
@@ -560,11 +681,53 @@
 .tLH1_3 {
   line-height: 1.3;
 }
+.tLH1_4 {
+  line-height: 1.4;
+}
 .tLH1_5 {
   line-height: 1.5;
 }
+.tLH1_6 {
+  line-height: 1.6;
+}
+.tLH1_7 {
+  line-height: 1.7;
+}
 .tLH1_8 {
   line-height: 1.8;
+}
+.tLH1_9 {
+  line-height: 1.9;
+}
+.tW0 {
+  width: 0;
+}
+.tH0 {
+  height: 0;
+}
+.tW16 {
+  width: 16px;
+}
+.tH16 {
+  height: 16px;
+}
+.tW32 {
+  width: 32px;
+}
+.tH32 {
+  height: 32px;
+}
+.tW64 {
+  width: 64px;
+}
+.tH64 {
+  height: 64px;
+}
+.tW128 {
+  width: 128px;
+}
+.tH128 {
+  height: 128px;
 }
 .tW30 {
   width: 30px;
@@ -578,151 +741,105 @@
 .tH44 {
   height: 44px;
 }
-/*前缀tF的字号将在未来的版本中将删除，文字字号请使用tFS前缀*/
+.tWH0 {
+  width: 0;
+  height: 0;
+}
+.tWH16 {
+  width: 16px;
+  height: 16px;
+}
+.tWH32 {
+  width: 32px;
+  height: 32px;
+}
+.tWH64 {
+  width: 64px;
+  height: 64px;
+}
+.tWH128 {
+  width: 128px;
+  height: 128px;
+}
+.tWH30 {
+  width: 30px;
+  height: 30px;
+}
+.tWH44 {
+  width: 44px;
+  height: 44px;
+}
 .tFS0 {
   font-size: 0;
-}
-.tF12 {
-  font-size: 12px;
 }
 .tFS12 {
   font-size: 12px;
 }
-.tF14 {
-  font-size: 14px;
-}
 .tFS14 {
   font-size: 14px;
-}
-.tF16 {
-  font-size: 16px;
 }
 .tFS16 {
   font-size: 16px;
 }
-.tF18 {
-  font-size: 18px;
-}
 .tFS18 {
   font-size: 18px;
-}
-.tF20 {
-  font-size: 20px;
 }
 .tFS20 {
   font-size: 20px;
 }
-.tF22 {
-  font-size: 22px;
-}
 .tFS22 {
   font-size: 22px;
-}
-.tF24 {
-  font-size: 24px;
 }
 .tFS24 {
   font-size: 24px;
 }
-.tF26 {
-  font-size: 26px;
-}
 .tFS26 {
   font-size: 26px;
-}
-.tF28 {
-  font-size: 28px;
 }
 .tFS28 {
   font-size: 28px;
 }
-.tF30 {
-  font-size: 30px;
-}
 .tFS30 {
   font-size: 30px;
-}
-/*前缀tF的文字颜色将在未来的版本中将删除，文字颜色请使用tFC前缀*/
-.tF0 {
-  color: #000;
 }
 .tFC0 {
   color: #000;
 }
-.tF3 {
-  color: #333;
-}
 .tFC3 {
   color: #333;
-}
-.tF4 {
-  color: #444;
 }
 .tFC4 {
   color: #444;
 }
-.tF5 {
-  color: #555;
-}
 .tFC5 {
   color: #555;
-}
-.tF6 {
-  color: #666;
 }
 .tFC6 {
   color: #666;
 }
-.tF7 {
-  color: #777;
-}
 .tFC7 {
   color: #777;
-}
-.tF8 {
-  color: #888;
 }
 .tFC8 {
   color: #888;
 }
-.tF9 {
-  color: #999;
-}
 .tFC9 {
   color: #999;
-}
-.tFa {
-  color: #aaa;
 }
 .tFCa {
   color: #aaa;
 }
-.tFb {
-  color: #bbb;
-}
 .tFCb {
   color: #bbb;
-}
-.tFc {
-  color: #ccc;
 }
 .tFCc {
   color: #ccc;
 }
-.tFd {
-  color: #ddd;
-}
 .tFCd {
   color: #ddd;
 }
-.tFe {
-  color: #eee;
-}
 .tFCe {
   color: #eee;
-}
-.tFf {
-  color: #fff;
 }
 .tFCf {
   color: #fff;
@@ -792,6 +909,9 @@
 }
 .tOP80 {
   opacity: 0.8;
+}
+.tOP100 {
+  opacity: 1;
 }
 .t3D {
   -webkit-transform: translateZ(0);

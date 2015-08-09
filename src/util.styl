@@ -1,7 +1,7 @@
 @require 'var'
 
 // float && clear
-.tCL:after
+.tCL:after, .tClear:after
     content "."
     display block
     height 0
@@ -26,7 +26,7 @@ for n in 3 4 5 6
         radiusL n
 
 // padding
-for n in 0 2 4 6 8 10 12 14 16 18 20 30
+for n in 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30
     .tP{n}
         paddingAll n
     .tPT{n}
@@ -38,8 +38,8 @@ for n in 0 2 4 6 8 10 12 14 16 18 20 30
     .tPL{n}
         paddingLeft n
 
-// margin 
-for n in 0 2 4 6 8 10 12 14 16 18 20 30
+// margin
+for n in 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30
     .tM{n}
         marginAll n
     .tMT{n}
@@ -76,13 +76,17 @@ for n in 0 2 4 6 8 10 12 14 16 18 20 30
     omit 2
 .tOmit3
     omit 3
-    
+
 // font line height
 line-heights = {
     '1': 1,
     '1_3': 1.3,
+    '1_4': 1.4,
     '1_5': 1.5,
+    '1_6': 1.6,
+    '1_7': 1.7,
     '1_8': 1.8,
+    '1_9': 1.9,
     '2':   2,
     '30':  30px,
     '44':  44px
@@ -91,23 +95,24 @@ for key, value in line-heights
     .tLH{key}
         line-height value
 
-for n in 30 44
+// width & height
+for n in 0 16 32 64 128 30 44
     .tW{n}
         w n
     .tH{n}
         h n
-        
-/*前缀tF的字号将在未来的版本中将删除，文字字号请使用tFS前缀*/
+
+// square
+for n in 0 16 32 64 128 30 44
+    .tWH{n}
+        w n
+        h n
+
 // font size
-.tFS0
-    fontSize 0
-for n in 12 14 16 18 20 22 24 26 28 30
-    .tF{n}
-        fontSize n
+for n in 0 12 14 16 18 20 22 24 26 28 30
     .tFS{n}
         fontSize n
 
-/*前缀tF的文字颜色将在未来的版本中将删除，文字颜色请使用tFC前缀*/
 // font color
 font-colors = {
     '0': #000,
@@ -126,11 +131,9 @@ font-colors = {
     'f': #fff
 }
 for key, value in font-colors
-    .tF{key}
-        color value
     .tFC{key}
         color value
-        
+
 // font align
 .tFAL
     text-align left
@@ -138,7 +141,7 @@ for key, value in font-colors
     text-align center
 .tFAR
     text-align right
-        
+
 // background color
 background-colors = {
     '0': #000,
@@ -161,7 +164,7 @@ for key, value in background-colors
         background-color value
 
 // opacity
-for n in 0 10 30 50 80
+for n in 0 10 30 50 80 100
     .tOP{n}
         opacity (n/100)
 

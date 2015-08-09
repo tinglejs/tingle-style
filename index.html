@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>flexbox test</title>
+<title>tingle style</title>
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="HandheldFriendly" content="True">
@@ -9,77 +9,59 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <meta http-equiv="cleartype" content="on">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<script>
+/**
+ * rem base
+ */
+(function() {
+    var doc = document;
+    var win = window;
+    var docEl = doc.documentElement;
+    var fontEl = doc.createElement('style');
+    var dpr = win.devicePixelRatio || 1;
+
+    // 类似小米2webview webkit版本是534及以下，避免闪屏
+    var matches = navigator.userAgent.match(/Android[\S\s]+AppleWebkit\/?(\d{3})/i);
+    if (matches && matches[1] <= 534) {
+        dpr = 1;
+    }
+
+    win.dpr = dpr;
+    docEl.setAttribute('data-dpr', dpr);
+    docEl.firstElementChild.appendChild(fontEl);
+
+    win.addEventListener('resize', function() {
+        // resize时立刻change,pad上刷屏明显
+        setRem();
+    }, false);
+    win.addEventListener('pageshow', function(e) {
+        if (e.persisted) {
+            setRem();
+        }
+    }, false);
+
+    setRem();
+
+    function setRem() {
+        var docWidth = docEl.clientWidth;
+        win.rem = docWidth / 10;
+
+        // ZTE 中兴 ZTE U930_TD/1.0 Linux/2.6.39/Android/4.0Release/3.5.2012 Browser/AppleWebkit534.30
+        // 老机器bug rem计算不是标准=html fontsize
+        if (/ZTE U930_TD/.test(navigator.userAgent)) {
+            win.rem = win.rem * 1.13;
+        }
+
+        fontEl.innerHTML = 'html{font-size:' + win.rem + 'px!important}';
+    }
+})();
+</script>
 <link rel="stylesheet" href="./src/tingle.css"/>
-<style>
-body{
-    padding: 10px;
-}
-h1{
-    font-size: 40px;
-    text-align: center;
-}
-h2{
-    font-size: 30px;
-    margin: 50px 0 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-}
-h3{
-    font-size: 20px;
-    margin: 20px 0;
-    padding: 10px;
-    text-align: center;
-    background-color: rgb(255, 204, 0);
-}
-.container{
-    margin: 10px 0;
-    background-color: #ddd;
-    color:#fff;
-}
-.ddd{background-color: #ddd;}
-.ddd{background-color: #ddd;}
-.red{background-color: red;}
-.orange{background-color: orange;}
-.pink{background-color: pink;}
-.green{background-color: green;}
-.yellowgreen{background-color: yellowgreen;}
-.h200{height: 200px;}
-.h30{height: 30px;}
-.h40{height: 40px;}
-.h50{height: 50px;}
-.h70{height: 70px;}
-.h100{height: 100px;}
-.w30{width: 30px;}
-.w40{width: 40px;}
-.w50{width: 50px;}
-.w70{width: 70px;}
-.w100{width: 100px;}
-p{margin: 10px 0 50px;color:#999;line-height: 1.5;}
-p b{color:#000;font-weight: bold;}
-textarea{
-    width: 100%;
-    height: 120px;
-    border:none;
-    background-color: #333;
-    color: #ddd;
-    resize:none;
-    overflow:hidden;
-    outline:none;
-}
-</style>
 </head>
-<body>
-
+<body class="tP10 tLH2">
 <h1>Tingle Style Doc</h1>
-
-<h2>Reset</h2>
-<p><a href="./doc/tingle-style-reset-doc.html">doc</a></p>
-
-<h2>Flexbox</h2>
-<p><a href="./doc/tingle-style-flexbox-doc.html">doc && demo</a></p>
-
-<h2>Util</h2>
-<p><a href="./doc/tingle-style-util-doc.html">doc && demo</a></p>
-
+<p><a href="./doc/tingle-style-reset-doc.html">reset</a></p>
+<p><a href="./doc/tingle-style-flexbox-doc.html">flexbox && demo</a></p>
+<p><a href="./doc/tingle-style-util-doc.html">util && demo</a></p>
 </body>
 </html>

@@ -1,12 +1,8 @@
 {
   "name": "tingle-style",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "base style for tinglejs",
   "repository": "https://github.com/tinglejs/tingle-style",
-  "files": [
-    "dist",
-    "README.md"
-  ],
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "~1.9.1",

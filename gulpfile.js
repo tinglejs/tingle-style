@@ -30,39 +30,44 @@ var cssmin = require('gulp-cssmin');
 
 
 // 清空build目录
-gulp.task('clear', function () {
+gulp.task('clear', function (cb) {
     del(['dist/*'], function (err, deletedFiles) {
         console.log('###### clear dist done ######');
     });
+    cb();
 });
 
-gulp.task('stylus', function() {
+// 编译tingle style源码
+gulp.task('stylus_tingle', function(cb) {
     gulp.src(['./src/**/*.styl'])
         .pipe(sourcemaps.init())
         .pipe(stylus())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./src'));
-    console.info('###### stylus done ######');
+    console.info('###### stylus_tingle done ######');
+    cb();
 });
 
 
 var reload = browserSync.reload;
+
+gulp.task('reload_by_src', ['stylus_tingle'], function () {
+    reload();
+});
+
 // 开发`Tingle component`时，执行`gulp develop` or `gulp d`
-gulp.task('develop', ['stylus'], function() {
+gulp.task('develop', ['stylus_tingle'], function() {
     browserSync({
         server: {
             baseDir: './'
         }
     });
 
-    gulp.watch([
-        'index.html',
-        'src/**/*.styl'
-    ], ['stylus', function () {
-        setTimeout(function () {
-            reload();
-        }, 600);
-    }]);
+    gulp.watch('index.html', function () {
+        reload();
+    });
+
+    gulp.watch('src/**/*.styl', ['reload_by_src']);
 });
 
 // 快捷方式
@@ -70,7 +75,7 @@ gulp.task('d', ['develop']);
 
 
 // 发布前执行build任务
-gulp.task('publish', ['stylus'], function () {
+gulp.task('build', ['clear', 'stylus_tingle'], function (cb) {
     gulp.src(["src/tingle.css"])
         .pipe(cssimport({}))
         .pipe(concat('tingle.css'))
@@ -90,10 +95,11 @@ gulp.task('publish', ['stylus'], function () {
             path.basename += '.min';
         }))
         .pipe(gulp.dest("dist/"));
-    console.info('###### tingle style publish done ######');
+    console.info('###### tingle-style build done ######');
+    cb();
 });
 
-gulp.task('p', ['publish']);
+gulp.task('b', ['build']);
 
 
 

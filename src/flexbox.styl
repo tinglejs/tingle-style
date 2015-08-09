@@ -35,7 +35,7 @@
     -webkit-box-pack start
     -webkit-justify-content start
     justify-content start
-    
+
 // main axis's justify center
 .tFBJC
     -webkit-box-pack center
@@ -54,21 +54,12 @@
     -webkit-justify-content space-between
     justify-content space-between
 
-.tFBH   
+.tFBH
     >.tFB1, >.tFB2, >.tFB3
         width 0
-    
-.tFB1 
-    -webkit-box-flex 1
-    -webkit-flex 1
-    flex 1
 
-.tFB2 
-    -webkit-box-flex 2
-    -webkit-flex 2
-    flex 2
-
-.tFB3 
-    -webkit-box-flex 3
-    -webkit-flex 3
-    flex 3
+for n in 1 2 3
+    .tFB{n}
+        -webkit-box-flex n
+        -webkit-flex n
+        flex n

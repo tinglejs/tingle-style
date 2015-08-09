@@ -244,5 +244,9 @@ a:active,
 a:hover {
   outline: 0;
 }
+svg path,
+svg g {
+  all: inherit !important;
+}
 
 /*# sourceMappingURL=reset.css.map */
