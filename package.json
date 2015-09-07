@@ -1,5 +1,9 @@
 {
   "name": "tingle-style",
+  "author": {
+    "name":"gnosaij",
+    "email":""
+    },
   "version": "0.0.1",
   "description": "base style for tinglejs",
   "repository": "https://github.com/tinglejs/tingle-style",
@@ -15,7 +19,5 @@
     "gulp-sourcemaps": "~1.5.1",
     "gulp-stylus": "~2.0.1"
   },
-  "scripts": {},
-  "author": "gnosaij",
   "license": "MIT"
 }
