@@ -289,12 +289,12 @@ svg g {
   justify-content: center;
 }
 .tFBJE {
-  -webkit-box-pack: end;
+  -webkit-box-pack: end /*待验证 是否要删除*/;
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
 }
 .tFBJ {
-  -webkit-box-pack: justify;
+  -webkit-box-pack: justify /*待验证 是否要删除*/;
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
@@ -995,10 +995,10 @@ svg g {
   line-height: 2;
 }
 .tLH30 {
-  line-height: 30px;
+  line-height: 0.8rem;
 }
 .tLH44 {
-  line-height: 44px;
+  line-height: 1.173333333333333rem;
 }
 .tLH1_3 {
   line-height: 1.3;
