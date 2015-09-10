@@ -1,9 +1,9 @@
 {
   "name": "tingle-style",
   "author": {
-    "name":"gnosaij",
-    "email":""
-    },
+    "name": "gnosaij",
+    "email": "gnosaij@yeah.net"
+  },
   "version": "0.2.0",
   "description": "base style for tinglejs",
   "repository": "https://github.com/tinglejs/tingle-style",
