@@ -4,7 +4,7 @@
     "name": "gnosaij",
     "email": "gnosaij@yeah.net"
   },
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "base style for tinglejs",
   "repository": "https://github.com/tinglejs/tingle-style",
   "dependencies": {},
