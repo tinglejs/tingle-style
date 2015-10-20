@@ -1,7 +1,7 @@
 {
   "name": "tingle-style",
-  "version": "0.0.1",
-  "description": "base style for tinglejs",
+  "version": "0.0.2",
+  "description": "base style and style utils for tinglejs",
   "repository": "https://github.com/tinglejs/tingle-style",
   "dependencies": {},
   "devDependencies": {
