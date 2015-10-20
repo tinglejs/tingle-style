@@ -107,6 +107,14 @@ body {
   line-height: 1;
   background-color: #fff;
   position: static !important;
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  -webkit-user-drag: none;
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 ul,
 ol {
@@ -243,10 +251,6 @@ a {
 a:active,
 a:hover {
   outline: 0;
-}
-svg path,
-svg g {
-  all: inherit !important;
 }
 
 /*# sourceMappingURL=reset.css.map */

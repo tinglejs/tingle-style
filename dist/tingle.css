@@ -107,6 +107,14 @@ body {
   line-height: 1;
   background-color: #fff;
   position: static !important;
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  -webkit-user-drag: none;
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 ul,
 ol {
@@ -289,12 +297,12 @@ svg g {
   justify-content: center;
 }
 .tFBJE {
-  -webkit-box-pack: end;
+  -webkit-box-pack: end /*待验证 是否要删除*/;
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
 }
 .tFBJ {
-  -webkit-box-pack: justify;
+  -webkit-box-pack: justify /*待验证 是否要删除*/;
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
