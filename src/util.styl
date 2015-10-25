@@ -12,10 +12,13 @@
 .tFR
     float right
 
-// radius
+// all radius
 for n in 3 4 5 6
     .tR{n}
         radius n
+// special radius
+// 拆开遍历是为了覆盖有效 比如`tR3 tRT5`中的`tRT5`可以生效
+for n in 3 4 5 6
     .tRT{n}
         radiusT n
     .tRR{n}
@@ -25,10 +28,12 @@ for n in 3 4 5 6
     .tRL{n}
         radiusL n
 
-// padding
+// all padding
 for n in 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30
     .tP{n}
         paddingAll n
+// special padding
+for n in 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30
     .tPT{n}
         paddingTop n
     .tPR{n}
@@ -38,10 +43,12 @@ for n in 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30
     .tPL{n}
         paddingLeft n
 
-// margin
+// all margin
 for n in 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30
     .tM{n}
         marginAll n
+// special margin
+for n in 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30
     .tMT{n}
         marginTop n
     .tMR{n}
