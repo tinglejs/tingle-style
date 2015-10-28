@@ -5,7 +5,7 @@
     "email": "gnosaij@yeah.net"
   },
   "main": "src/util.js",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "tingle 基础样式。",
   "repository": "https://github.com/tinglejs/tingle-style",
   "dependencies": {},
